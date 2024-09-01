@@ -2,12 +2,14 @@ body{
     background-image: linear-gradient(to top right,
     #00006f 10%,
     #380000,
-    #224d2b 90%);
+    #1d3f24 90%);
     height: 100%;
     margin: 0;
     background-size: 400% 400%;
     animation: bganimation 15s ease infinite;
     overflow-x: hidden;
+    animation: textappear 0.5s;
+
 }
 body p{
     margin: 0;
@@ -15,7 +17,6 @@ body p{
     top: 0;
     padding: 25px;
     color: antiquewhite;
-    animation: textappear 0.8s;
 }
 .container{
     position: relative;
@@ -26,33 +27,32 @@ body p{
 }
 .container .weltext h1,h3{
     position: absolute;
-    top: 15vh;
-    left: 10vw;
+    top: 18vh;
+    left: 12vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3.3em;
     background: linear-gradient(45deg, #fcbadb, #c78eff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    animation: textappear 0.8s;
 }
 .container .weltext h1{
-    top: 20vh;
+    top: 23vh;
     font-size: 5.3em;
 }
 .container .weltext p{
     padding: 5px;
     position: absolute;
-    top: 38vh;
-    left: 10vw;
+    top: 42vh;
+    left: 12vw;
     width: 35vw;
     font-size: large;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .container img{
     position: absolute;
-    right: 15vw;
-    top: 15vh;
+    right: 14vw;
+    top: 19vh;
     border-radius: 4%;
     cursor: pointer;
     max-width: 100%;
@@ -186,11 +186,10 @@ body p{
     padding: 0;
     box-sizing: border-box;
     overflow: hidden;
-
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-position-x: center;
     background-size: cover;
@@ -332,33 +331,79 @@ body p{
     width: 100vw;
     justify-content: center;
     gap: 1vw;
-    margin-right: 47vw;
+    margin-right: 45vw;
 }
 .icons a{
     color: #44b5ac;
-    margin-top: 30vh;
+    margin-top: 33vh;
 }
 .icons a:nth-child(1){
     animation: textappear 0.8s;
 }
 .icons a:nth-child(2){
     animation: textappear 0.8s;
-    animation-delay: 0.2s;
-} 
+    animation-delay: 0.1s;
+}
 .icons a:nth-child(3){
     animation: textappear 0.8s;
-    animation-delay: 0.4s;
+    animation-delay: 0.2s;
 }
 .icons a:nth-child(4){
     animation: textappear 0.8s;
-    animation-delay: 0.6s;
+    animation-delay: 0.3s;
 }
 
 .about_me{
-    height: 30vh;
-    width: 100%;
-    background-color: #99b544;
-}
-.about_me p{
     position: relative;
+    min-height: 30vh;
+    width: 82vw;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(4, 73, 62, 0.6);
+    border-radius: 100px;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
 }
+.about_me h1{
+    position: absolute;
+    top: 3vh;
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    color:aqua;
+}
+.hobby{
+    position: relative;
+    display: flex;
+    min-width: 90vw;
+    margin-top: 6vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.hobby p{
+    position: relative;
+    display: flex;
+    width: 29vw;
+    margin-left: 5vw;
+}
+.hobby img{
+    margin-left: 10vw;
+}
+#firsthobby{
+    margin-top: 15vh;
+}
+#firsthobby img{
+    border-radius: 10px 0 0 10px;
+}
+#firsthobby video{
+    border-radius: 0 10px 10px 0;
+}
+.hobby img{
+    border-radius: 10px;
+}
+
