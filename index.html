@@ -4,31 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="ItemFile/Penguin PFP.jpg">
+    <link rel="icon" href="ItemFile/PenguinPFPRounded.jpg" border-radius>
     <title>Ranen Sim</title>
     <script src="https://kit.fontawesome.com/5fd980475c.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav class="navbar">
-        <a href="" id="current">Home</a>
+        <a href="index.html" id="current">Home</a>
         <a href="">Games</a>
-        <a href="">Certifications</a>
+        <a href="certs.html">Certifications</a>
         <a href="">Volunteering</a>
-    </nav>
-    <main>
-        <p>@Razorbird360</p>
-        
-    </main>
+    </nav> 
+    <p>@Razorbird360</p>
 
     <div class="container">
-        <a href="ItemFile/RanenPic.jpg" target="_blank">
+        <a href="ItemFile/RanenPic.jpg" target="_blank" title="Malaysia Kota Kinabalu 2 Jan 2024">
             <img src="ItemFile/RanenPic.jpg" alt="Picture of Ranen" width="470px">
         </a>
 
         <span class="bga"></span>
         
         <div class="weltext">
-            <h3>Hello,</h1>
+            <h3>Hello,</h3>
             <h1>I'm Ranen</h1>
             <p>Currently, I am a Year 1 student at Ngee Ann Polytechnic, pursuing a Diploma in Information Technology. I have always been interested in full stack development and software engineering. I have basic skills in programming languages (Such as Python, Javascript, HTML & CSS, SQL, C#), networking, databases, and operating systems, which I am excited to develop further through my studies.</p>
         </div>
@@ -43,23 +40,52 @@
 
     </div>
 
-    <section class="about_me">
+    <section class="hobbies">
         <h1>Hobbies</h1>
         
         <div class="hobby" id="firsthobby">
-            <img src="ItemFile/IceSkatingPic.jpg" alt="Ice Skating Picture" height="300px">
-            <video src="ItemFile/ClaranceFallingOnIce.mp4" height="300px" autoplay muted loop></video>
+            <img src="ItemFile/IceSkatingPic.jpg" alt="Ice Skating Picture" height="300px" title="Kallang Ice Rink 14 Jul 2024">
+            <video src="ItemFile/ClaranceFallingOnIce.mp4" height="300px" autoplay muted loop preload="none" title="Kallang Ice Rink 14 Jul 2024"></video>
             <p>Ice skating is one of the activities I enjoy, for a few years now I have gone ice skating every term break or holiday with my friends (It's tradition now). Often, I liked to go to the ice rink @Jcube, although they shut it down in 2023 😡.</p>
         </div>
 
         <div class="hobby">
-            <img src="ItemFile/PianoPic.jpg" alt="Piano Recital Picture" height="300px">
+            <img src="ItemFile/PianoPic.jpg" alt="Piano Recital Picture" height="300px" title="Bechstein Music World 25 Jun 2023">
             <p>I have learnt piano since I was 7, and have enjoyed playing many different types of pieces from different genres. Despite stopping for a few years after finishing my grade 5 exam, I am currently continuing to practice it after picking it back up.</p>
+        </div>
 
         <div class="hobby">
-            <img src="ItemFile/PianoPic.jpg" alt="Piano Recital Picture" height="300px">
-            <p>Piano</p>
+            <img src="ItemFile/KotaKinabaluPic.jpg" alt="Selfie at kota kinabalu" height="300px" id="malaysiaphoto" title="Malaysia Kota Kinabalu 1 Jan 2024">
+            <img src="ItemFile/Japan_Fujikawaguchiko.jpg" alt="Selfie Japan Fujikawaguchiko" height="300px" id="japanphoto" title="Japan Fujikawaguchiko 4 Apr 2024">
+            <p>Traveling is one of the rare activties which I enjoy the most. I like having the chance to explore new countries and see places in person where I have always wanted to visit. The most notable trips I have are my Malaysia and Japan trips which I enjoyed exhaustively 🤩.</p>
         </div>
+    </section>
+
+    <section class="npcc">
+        <div class="desc_npcc">
+            <h1>CCA (Sec School)</h1>
+            <p>
+                <span>NPCC</span> was not one of the 3 choices of CCAs I had applied for in secondary school, but if given the chance, I would pick NPCC as my CCA without hesitation. Initially, I was unsure of what to expect, but soon I realized that NPCC offered more than just physical training and drills. It provided me with a sense of discipline, teamwork, and leadership that I hadn't anticipated. The bonds I formed over the years during activities such as unit camps, drills and especially leading the Sec 2 batch in 2023 as their squad IC, was truly rewarding. Looking back, I’m grateful for the unexpected journey that created many profound memories and shaped me into who I am today.
+            </p>
+        </div>
+        <div class="images_npcc">
+            <img height="400px" src="ItemFile/Passing On Parade (POP) 9 May 2023.jpg" alt="NPCC Passing On Parade 9 May 2023" title="NPCC Passing On Parade 9 May 2023">
+            <img height="400px" src="ItemFile/Pulau Ubin 28 May 2022.jpg" alt="Pulau Ubin 28 May 2022" title="Pulau Ubin 28 May 2022">
+            <img height="400px" src="ItemFile/NPCC Day 9 May 2023.jpg" alt="ItemFile/NPCC Day 9 May 2023.jpg" title="ItemFile/NPCC Day 9 May 2023.jpg">
+        </div>
+        <div class="hidden_npcc">
+            <div class="hidden_images_npcc">
+                <img height="400px" src="ItemFile/First Aid Course.jpg" alt="">
+            </div>
+
+            <label class="toggle_npcc">
+                <input type="checkbox" class="input_npcc">
+                <div class="arrow_icon">
+                    <i class="fa-solid fa-caret-down fa-5x"></i>
+                </div>
+            </label>
+        </div>
+        
     </section>
 
     <div class="stars">
@@ -76,5 +102,8 @@
         <span></span>
         <span></span>
     </div>
+
+
+    <script>history.scrollRestoration = "manual"</script>
 </body>
 </html>

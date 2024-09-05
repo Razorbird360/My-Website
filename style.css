@@ -1,14 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
     background-image: linear-gradient(to top right,
     #00006f 10%,
     #380000,
-    #1d3f24 90%);
-    height: 100%;
+    #357b44);
+    min-height: 100vh;
     margin: 0;
+    animation: bganimation 15s ease infinite, textappear 0.5s;
     background-size: 400% 400%;
-    animation: bganimation 15s ease infinite;
+    background-repeat: no-repeat;
     overflow-x: hidden;
-    animation: textappear 0.5s;
 
 }
 body p{
@@ -25,9 +29,9 @@ body p{
     display: flex;
     align-items: center;
 }
-.container .weltext h1,h3{
+.weltext h1,h3{
     position: absolute;
-    top: 18vh;
+    top: 25vh;
     left: 12vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 3.3em;
@@ -36,14 +40,14 @@ body p{
     background-clip: text;
     color: transparent;
 }
-.container .weltext h1{
-    top: 23vh;
+.weltext h1{
+    top: 30vh;
     font-size: 5.3em;
 }
-.container .weltext p{
+.weltext p{
     padding: 5px;
     position: absolute;
-    top: 42vh;
+    top: 44vh;
     left: 12vw;
     width: 35vw;
     font-size: large;
@@ -73,7 +77,7 @@ body p{
     color: rgb(8, 36, 36);
     text-shadow: 2px 2px 3px #6566af;
 }
-.navbar a {
+.navbar a{
     text-decoration: none;
     color: hsl(0, 36%, 91%);
     padding: 10px 25px;
@@ -131,55 +135,6 @@ body p{
         opacity: 100%;
     }
 }
-/*
-.bga{
-    display: flex;
-    height: 50px;
-    width: 50px;
-    border: 3px solid rgb(0, 0, 0);
-    justify-content: center;
-    align-items: center;
-    animation: bganimation infinite 5s linear;
-
-    opacity: 10%;
-    z-index: -1;
-}
-@keyframes bganimation {
-    0% {
-        border-color: black;
-        transform: rotate(0deg) scale(0);
-        text-shadow: none;
-    }
-    33.3% {
-        border-color: aqua;
-        transform: rotate(120deg) scale(0.5);
-        text-shadow: 
-            0 0 10px #03bcf4,
-            0 0 20px #03bcf4,
-            0 0 40px #03bcf4,
-            0 0 80px #03bcf4;
-    }
-    66.6% {
-        border-color: black;
-        transform: rotate(240deg) scale(1);
-        text-shadow: 
-            0 0 10px #03bcf4,
-            0 0 20px #03bcf4,
-            0 0 40px #03bcf4,
-            0 0 80px #03bcf4;
-    }
-    100% {
-        border-color: aqua;
-        transform: rotate(360deg) scale(0.5);
-        text-shadow: 
-            0 0 10px #03bcf4,
-            0 0 20px #03bcf4,
-            0 0 40px #03bcf4,
-            0 0 80px #03bcf4;
-    }
-}
-*/
-
 
 .stars{
     margin: 0;
@@ -310,7 +265,7 @@ body p{
     left: initial;
     animation-delay: 2.75s;
     animation-duration: 2.25s;
-}*/
+}
 .stars span:nth-child(11){
     top: 600px;
     right: 0px;
@@ -335,7 +290,7 @@ body p{
 }
 .icons a{
     color: #44b5ac;
-    margin-top: 33vh;
+    margin-top: 35vh;
 }
 .icons a:nth-child(1){
     animation: textappear 0.8s;
@@ -353,21 +308,24 @@ body p{
     animation-delay: 0.3s;
 }
 
-.about_me{
+.hobbies{
     position: relative;
-    min-height: 30vh;
     width: 82vw;
     margin: auto;
     padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(4, 73, 62, 0.6);
+    background: linear-gradient(to right, rgba(4, 73, 62, 0.7 ), rgba(37, 92, 113, 0.7) 90%);
     border-radius: 100px;
     flex-wrap: wrap;
     padding-bottom: 10vh;
+    margin-bottom: 10vh;
 }
-.about_me h1{
+.hobbies img, .hobbies video{
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+.hobbies h1{
     position: absolute;
     top: 3vh;
     margin: 0;
@@ -405,5 +363,181 @@ body p{
 }
 .hobby img{
     border-radius: 10px;
+}
+#japanphoto{
+    margin: 0;
+    border-radius: 0 10px 10px 0;
+}
+#malaysiaphoto{
+    border-radius: 10px 0 0 10px;
+}
+
+.npcc{
+    position: relative;
+    width: 90vw;
+    margin: auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 10vh;
+}
+.npcc .desc_npcc {
+    position: relative;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.npcc h1{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    margin: 0;
+    font-size: 3em;
+    font-family: 'Courier New', Courier, monospace;
+    color:aqua;
+}
+.npcc p{
+    width: 50vw;
+    position: relative;
+    margin-bottom: 5vh;
+}
+.images_npcc{
+    width: 90vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+.images_npcc img{
+    border-radius: 10px;
+    margin: 0;
+}
+.hidden_npcc{
+    width: 90vw;
+    margin: auto;
+    text-align: center;
+}
+.hidden_images_npcc{
+    max-height: 0;
+    overflow: hidden;
+    margin-top: 5vh;
+    transition: max-height 0.5s;
+}
+.toggle_npcc{
+    margin: 0;
+    padding: 0 10px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fcbadb;
+}
+.input_npcc{
+    display: none;
+}
+.arrow_icon{
+    position: relative;
+    transition: transform 0.2s;
+}
+.input_npcc:checked ~ .arrow_icon{
+    transform: rotate(-180deg);
+}
+.input_npcc:checked ~ .hidden_images_npcc{
+    max-height: 1000px;
+}
+
+
+
+
+
+#cert_weltext{
+    inset: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    top: 15vh;
+    animation: bounce_in 4s linear;
+}
+.certs_container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    min-height: 120vh;
+}
+
+.certs_container .cert{
+    position: relative;
+    width: 400px;
+    height: 310px;
+    background: repeating-conic-gradient(from var(--a), #1c87df 0%, #1c87df 5%, transparent 5%, transparent 40%, #1c87df 50%);
+    --a: 0deg;
+    border-radius: 5px;
+}
+.certs_container .cert img{
+    width: 388px;
+    height: 298px;
+    position: absolute;
+    inset: 6px;
+    border-radius: 3px;
+}
+.first_cert_col .cert{
+    animation: cert_border 4s linear infinite, bounce_in 3s linear;
+}
+.second_cert_col .cert{
+    animation: cert_border 4s linear infinite, bounce_in 3s linear;
+    animation-delay: 0.1s;
+}
+.third_cert_col .cert{
+    animation: cert_border 4s linear infinite, bounce_in 3s linear;
+    animation-delay: 0.2s;
+}
+
+@property --a{
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+@keyframes cert_border {
+    0% {
+        --a: 0deg;
+    }
+    100% {
+        --a: 360deg;
+    }
+}
+@keyframes bounce_in {
+    0%{
+        transform: translateY(-1000vh);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    53% {
+        transform: translateY(-50px);
+    }
+    60% {
+        transform: translateY(15px);
+    }
+    85% {
+        transform: translateY(-10px);
+    }
+    90% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.first_cert_col{
+    margin-top: 38vh;
+}
+.second_cert_col{
+    margin-top: 48vh;
+}
+.third_cert_col{
+    margin-top: 58vh;
 }
 
