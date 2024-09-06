@@ -29,7 +29,7 @@ body p{
     display: flex;
     align-items: center;
 }
-.weltext h1,h3{
+.weltext h1, .weltext h3{
     position: absolute;
     top: 25vh;
     left: 12vw;
@@ -457,7 +457,12 @@ body p{
     display: flex;
     justify-content: center;
     top: 15vh;
-    animation: bounce_in 4s linear;
+    animation: textappear 4s linear;
+
+    background: linear-gradient(45deg, #fcbadb, #c285ff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 .certs_container {
     display: flex;
@@ -473,6 +478,11 @@ body p{
     background: repeating-conic-gradient(from var(--a), #1c87df 0%, #1c87df 5%, transparent 5%, transparent 40%, #1c87df 50%);
     --a: 0deg;
     border-radius: 5px;
+    transition: background-color 0.8s;
+    overflow: hidden;
+}
+.certs_container .cert:hover{
+    background-color: #1c87df;
 }
 .certs_container .cert img{
     width: 388px;
@@ -481,6 +491,32 @@ body p{
     inset: 6px;
     border-radius: 3px;
 }
+.certs_container .cert::after{
+    content: '';
+    position: absolute;
+    width: 388px;
+    height: 298px;
+    background: linear-gradient(
+        135deg,
+        hsla(0, 0%, 83%, 0.1) 45%,
+        rgba(111, 199, 195, 0.5) 50%,
+        hsla(0, 0%, 83%, 0.1) 55%
+    );
+    top: 50%;
+    left: 50%;
+    background-size: 600% 600%;
+    transform: translate(-50%, -50%);
+    animation: waveanimation 3.5s infinite;
+}
+@keyframes waveanimation {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
 .first_cert_col .cert{
     animation: cert_border 4s linear infinite, bounce_in 3s linear;
 }
