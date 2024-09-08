@@ -9,7 +9,7 @@ body{
     #357b44);
     min-height: 100vh;
     margin: 0;
-    animation: bganimation 15s ease infinite, textappear 0.5s;
+    animation: bganimation 15s ease infinite, textappear 0.4s;
     background-size: 400% 400%;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -39,6 +39,7 @@ body p{
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation: textappear 0.8s;
 }
 .weltext h1{
     top: 30vh;
@@ -450,20 +451,30 @@ body p{
 
 
 
+/* Certifications page */
 
-#cert_weltext{
-    inset: 0;
+.cert_weltext {
     width: 100vw;
+    height: 100vh;
+    position: absolute;
     display: flex;
     justify-content: center;
-    top: 15vh;
-    animation: textappear 4s linear;
+}
 
-    background: linear-gradient(45deg, #fcbadb, #c285ff);
+.cert_weltext h1{
+    margin-top: 18vh;
+    animation: textappear 0.6s;
+    font-size: 5.2em;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    background-size: 100%;
+    background: linear-gradient(45deg, #eccedc 50%, #9d61d8);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
+
+
 .certs_container {
     display: flex;
     justify-content: space-evenly;
